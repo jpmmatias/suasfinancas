@@ -1,0 +1,44 @@
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Suas Finanças</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<header class="wrapper">
+			<h1>Suas Finanças</h1>
+		</header>
+		<main>
+			<div class="form">
+				<form class="new-item-form">
+					<div class="field">
+						<label>Tipo:</label>
+						<select id="type">
+							<option value="fatura">Fatura</option>
+							<option value="pagamento">Pagamento</option>
+						</select>
+					</div>
+					<div class="field">
+						<label>Para / De:</label>
+						<input type="text" id="tofrom" />
+					</div>
+					<div class="field">
+						<label>Detalhes:</label>
+						<input type="text" id="details" />
+					</div>
+					<div class="field">
+						<label>Montante (R$):</label>
+						<input type="number" id="amount" />
+					</div>
+					<button>Adicionar</button>
+				</form>
+			</div>
+			<div class="wrapper dados">
+				<ul class="item-list"></ul>
+			</div>
+		</main>
+
+		<script type="module" src="app.js"></script>
+	</body>
+</html>
